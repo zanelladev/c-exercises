@@ -10,7 +10,7 @@ int main(){
 
   printf("Digite seu nome completo (sem espacos): ");
   fgets(nome, 100, stdin);
-  nome[strlen(nome - 1)] = '\0';
+  nome[strlen(nome) - 1] = '\0';
 
   for(i = 0; i < (int)strlen(nome); i++) {
     soma += toupper(nome[i]) - 64;
