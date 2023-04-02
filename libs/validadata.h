@@ -29,4 +29,15 @@ int validaData(int dia, int mes, int ano){
     }
 }
 
+int validaHorario(int horas, int minutos, int segundos) {
+    if (horas < 0 || horas > 23)
+        return 0;
+    if (minutos < 0 || minutos > 59)
+        return 0;
+    if (segundos < 0 || segundos > 59)
+        return 0;
+    return 1;
+}
+
+
 #endif
